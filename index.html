@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unfit for Purpose: MOT Odometer Data and Pay-Per-Mile Taxation</title>
+    <meta name="description" content="Independent analysis of 760 million MOT records reveals 4.7% of UK vehicles have odometer data quality issues that would complicate pay-per-mile road taxation.">
+    <meta property="og:title" content="Unfit for Purpose: MOT Odometer Data and Pay-Per-Mile Taxation">
+    <meta property="og:description" content="4.7% of UK vehicles have odometer data issues. That's 1.3 million motorists facing potential taxation disputes.">
+    <meta property="og:type" content="article">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">MOT <span>Odometer Analysis</span></div>
+        <ul>
+            <li><a href="#findings">Findings</a></li>
+            <li><a href="#benchmarks">Benchmarks</a></li>
+            <li><a href="#trend">Trend</a></li>
+            <li><a href="#international">International</a></li>
+            <li><a href="#policy">Policy</a></li>
+            <li><a href="#methodology">Methodology</a></li>
+            <li><a href="#paper">Paper</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!-- ─── Hero ─── -->
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-badge">Independent Research &middot; December 2025</div>
+            <h1>MOT odometer data is <em>unfit</em> for pay-per-mile taxation</h1>
+            <p class="hero-sub">Analysis of every MOT test ever recorded in the UK reveals significant data quality issues that would undermine fair road pricing.</p>
+            <div class="hero-cta">
+                <a href="mot_odometer_analysis.pdf" class="btn btn-amber" target="_blank">Read the Paper (PDF)</a>
+                <a href="#findings" class="btn btn-outline">Explore the Findings</a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="hero-stat-value">4.7%</div>
+                    <div class="hero-stat-label">of vehicles have odometer data issues</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-value">1.3M</div>
+                    <div class="hero-stat-label">motorists facing potential tax disputes</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-value">760M</div>
+                    <div class="hero-stat-label">MOT test records analysed</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── Data Scale ─── -->
+    <section id="data" class="alt">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2>The Dataset</h2>
+                <p>This isn't a sample. It's every MOT test ever recorded in the UK.</p>
+            </div>
+            <div class="scale-grid fade-up">
+                <div class="scale-card">
+                    <div class="number">760M</div>
+                    <div class="unit">MOT tests analysed</div>
+                </div>
+                <div class="scale-card">
+                    <div class="number">112M</div>
+                    <div class="unit">passenger vehicles</div>
+                </div>
+                <div class="scale-card">
+                    <div class="number">20 yrs</div>
+                    <div class="unit">of history (2005&ndash;2025)</div>
+                </div>
+                <div class="scale-card">
+                    <div class="number">46.9 GB</div>
+                    <div class="unit">of raw DVSA data</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── Key Findings ─── -->
+    <section id="findings">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2>What We Found</h2>
+                <p>Seven categories of odometer data quality issues, each with different causes and implications.</p>
+            </div>
+
+            <!-- Interactive bar chart -->
+            <div class="interactive-bars fade-up">
+                <div class="bar-row" data-pct="3.02">
+                    <span class="bar-label">Declining mileage</span>
+                    <div class="bar-track"><div class="bar-fill" style="--target-width: 64.7%;"></div></div>
+                    <span class="bar-value">3.4M <small>(3.02%)</small></span>
+                </div>
+                <div class="bar-row" data-pct="2.86">
+                    <span class="bar-label">Unit confusion (km/mi)</span>
+                    <div class="bar-track"><div class="bar-fill" style="--target-width: 61.2%;"></div></div>
+                    <span class="bar-value">3.2M <small>(2.86%)</small></span>
+                </div>
+                <div class="bar-row" data-pct="1.09">
+                    <span class="bar-label">Unreadable odometer</span>
+                    <div class="bar-track"><div class="bar-fill" style="--target-width: 23.3%;"></div></div>
+                    <span class="bar-value">1.2M <small>(1.09%)</small></span>
+                </div>
+                <div class="bar-row" data-pct="0.58">
+                    <span class="bar-label">No odometer recorded</span>
+                    <div class="bar-track"><div class="bar-fill" style="--target-width: 12.4%;"></div></div>
+                    <span class="bar-value">655K <small>(0.58%)</small></span>
+                </div>
+                <div class="bar-row" data-pct="0.43">
+                    <span class="bar-label">Implausible increase</span>
+                    <div class="bar-track"><div class="bar-fill" style="--target-width: 9.2%;"></div></div>
+                    <span class="bar-value">485K <small>(0.43%)</small></span>
+                </div>
+                <div class="bar-row" data-pct="0.14">
+                    <span class="bar-label">Keying error (validated)</span>
+                    <div class="bar-track"><div class="bar-fill" style="--target-width: 3.0%;"></div></div>
+                    <span class="bar-value">156K <small>(0.14%)</small></span>
+                </div>
+                <div class="bar-row" data-pct="0.13">
+                    <span class="bar-label">Stuck/broken odometer</span>
+                    <div class="bar-track"><div class="bar-fill" style="--target-width: 2.8%;"></div></div>
+                    <span class="bar-value">151K <small>(0.13%)</small></span>
+                </div>
+                <p class="bar-footnote">Hover or tap bars for detail. Vehicles may have multiple issues. 43% of vehicles have only one MOT and cannot be sequentially analysed.</p>
+            </div>
+
+            <!-- Side-by-side: table + figure -->
+            <div class="issue-grid fade-up" style="margin-top: 40px;">
+                <div class="figure-panel">
+                    <img src="figures/issue_breakdown.png" alt="Issue breakdown chart showing declining mileage and unit confusion as the two largest categories" loading="lazy">
+                    <p class="figure-caption">Fig. 1: Distribution of odometer data quality issues across 112 million passenger vehicles</p>
+                </div>
+                <div class="figure-panel">
+                    <img src="figures/reliability_pie.png" alt="Pie chart showing 4.7% affected vs 95.3% unaffected" loading="lazy">
+                    <p class="figure-caption">Fig. 2: Overall data reliability &mdash; 95.3% of vehicles have no detectable issues</p>
+                </div>
+            </div>
+
+            <!-- Highlight: 1.3M -->
+            <div class="highlight-banner fade-up">
+                <h3>Extrapolated to the UK's 27.5 million car fleet</h3>
+                <div class="big-number" data-count="1300000">~1.3 million</div>
+                <p>motorists would face potential taxation disputes under a pay-per-mile scheme using MOT data</p>
+            </div>
+
+            <div class="figure-panel fade-up" style="max-width: 600px; margin: 40px auto 0;">
+                <img src="figures/uk_fleet_impact.png" alt="Stacked bar showing 1.3 million affected vehicles out of 27.5 million UK car fleet" loading="lazy">
+                <p class="figure-caption">Fig. 3: Estimated fleet impact &mdash; affected vehicles as proportion of the 27.5M UK passenger car fleet</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── Benchmark Comparison ─── -->
+    <section id="benchmarks" class="alt">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2>Consistent with Government Data</h2>
+                <p>Our findings closely align with published statistics from DVSA and industry.</p>
+            </div>
+
+            <div class="benchmark-grid fade-up">
+                <div class="benchmark-card">
+                    <div class="benchmark-source">DVSA</div>
+                    <div class="benchmark-value">~4%</div>
+                    <div class="benchmark-desc">of MOT tests trigger mileage warnings. 14,000+ correction requests per year.</div>
+                </div>
+                <div class="benchmark-card ours">
+                    <div class="benchmark-source">This Analysis</div>
+                    <div class="benchmark-value">4.67%</div>
+                    <div class="benchmark-desc">of vehicles have detectable odometer data quality issues (95% CI: 4.66%&ndash;4.67%).</div>
+                </div>
+                <div class="benchmark-card">
+                    <div class="benchmark-source">Cap HPI (2020)</div>
+                    <div class="benchmark-value">6.3%</div>
+                    <div class="benchmark-desc">of vehicles have mileage discrepancies. 45% increase over five years.</div>
+                </div>
+            </div>
+
+            <div class="figure-panel fade-up" style="max-width: 600px; margin: 40px auto 0;">
+                <img src="figures/benchmark_comparison.png" alt="Bar chart comparing this study's 4.67% with DVSA's 4% and Cap HPI's 6.3%" loading="lazy">
+                <p class="figure-caption">Our findings sit between DVSA's warning trigger rate and Cap HPI's broader discrepancy measure</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── Temporal Trend ─── -->
+    <section id="trend">
+        <div class="container">
+            <div class="trend-content fade-up">
+                <div class="trend-text">
+                    <h3>The good news: data quality is improving rapidly</h3>
+                    <p>The rate of declining mileage readings has fallen from 1.23% in 2010 to just 0.24% in 2025. This 80% improvement demonstrates that system improvements are working.</p>
+                    <p>DVSA's automated warning systems, introduced in recent years, appear to be having a significant effect on recording accuracy.</p>
+                    <div class="trend-stat">80% improvement since 2010</div>
+                </div>
+                <div class="figure-panel">
+                    <img src="figures/temporal_trend.png" alt="Line chart showing declining mileage rate dropping from 1.23% in 2010 to 0.24% in 2025" loading="lazy">
+                    <p class="figure-caption">Declining mileage rate by year, showing consistent improvement</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── International ─── -->
+    <section id="international" class="alt">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2>No Country Uses MOT Data for Taxation</h2>
+                <p>Every jurisdiction that has attempted mileage-based taxation uses purpose-built systems, not annual inspection readings.</p>
+            </div>
+
+            <div class="intl-grid fade-up">
+                <div class="intl-card">
+                    <div class="intl-flag">&#x1F1F3;&#x1F1F1;</div>
+                    <h3>Netherlands</h3>
+                    <p class="approach">Considered km-based tax, then abandoned. Would have required on-board units, not inspection data.</p>
+                    <p class="verdict">Did not use MOT data</p>
+                </div>
+                <div class="intl-card">
+                    <div class="intl-flag">&#x1F1F3;&#x1F1FF;</div>
+                    <h3>New Zealand</h3>
+                    <p class="approach">Road user charges for diesel vehicles. Uses tamper-evident hubodometers &mdash; dedicated hardware.</p>
+                    <p class="verdict">Did not use WOF data</p>
+                </div>
+                <div class="intl-card">
+                    <div class="intl-flag">&#x1F1FA;&#x1F1F8;</div>
+                    <h3>Oregon, USA</h3>
+                    <p class="approach">Voluntary OReGO program. Uses GPS tracking or verified odometer photographs.</p>
+                    <p class="verdict">Did not use inspection data</p>
+                </div>
+            </div>
+
+            <div class="intl-takeaway fade-up">
+                <p>No comparable jurisdiction uses annual vehicle inspection readings for road taxation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── Legal & Regulatory Gaps ─── -->
+    <section id="legal">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2>The Regulatory Gap</h2>
+                <p>Odometers were designed for drivers, not tax collectors. The legal framework reflects this.</p>
+            </div>
+
+            <div class="legal-grid fade-up">
+                <div class="legal-card">
+                    <h3>No maintenance requirement</h3>
+                    <p>UN Regulation 39 mandates odometers at manufacture, but UK Construction &amp; Use Regulations do not require them to remain functional. A broken odometer is not an MOT failure.</p>
+                </div>
+                <div class="legal-card">
+                    <h3>Three-year blind spot</h3>
+                    <p>First MOT at age 3 establishes the baseline. Mileage "corrected" before the first MOT is invisible to any subsequent analysis.</p>
+                </div>
+                <div class="legal-card">
+                    <h3>Mileage blockers openly sold</h3>
+                    <p>Devices that reduce or stop mileage recording are sold legally in the UK. Unlike crude rollback, blocking leaves no trace in vehicle ECU memory.</p>
+                </div>
+                <div class="legal-card">
+                    <h3>&plusmn;4% accuracy tolerance</h3>
+                    <p>Odometers are permitted &plusmn;4% error at type approval with no ongoing calibration. Over a vehicle's lifetime, this compounds to thousands of miles of drift.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── Tax Impact Calculator ─── -->
+    <section id="calculator">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2>What Would This Mean in Practice?</h2>
+                <p>Explore the potential tax impact of odometer data errors under a hypothetical pay-per-mile scheme.</p>
+            </div>
+
+            <div class="calculator-box fade-up">
+                <div class="calc-inputs">
+                    <div class="calc-group">
+                        <label for="rateInput">Tax rate (pence per mile)</label>
+                        <input type="range" id="rateInput" min="1" max="10" value="2" step="0.5">
+                        <span class="calc-display" id="rateDisplay">2p/mile</span>
+                    </div>
+                    <div class="calc-group">
+                        <label for="mileageInput">Average annual mileage</label>
+                        <input type="range" id="mileageInput" min="3000" max="20000" value="7400" step="100">
+                        <span class="calc-display" id="mileageDisplay">7,400 miles</span>
+                    </div>
+                </div>
+                <div class="calc-results">
+                    <div class="calc-result">
+                        <div class="calc-result-label">Annual tax per driver</div>
+                        <div class="calc-result-value" id="annualTax">&pound;148</div>
+                    </div>
+                    <div class="calc-result">
+                        <div class="calc-result-label">Drivers with data issues</div>
+                        <div class="calc-result-value" id="affectedDrivers">1.3M</div>
+                    </div>
+                    <div class="calc-result">
+                        <div class="calc-result-label">Potential disputes if 10% appeal</div>
+                        <div class="calc-result-value" id="disputes">130K</div>
+                    </div>
+                    <div class="calc-result highlight">
+                        <div class="calc-result-label">Typical error magnitude</div>
+                        <div class="calc-result-value" id="errorCost">&pound;200&ndash;1,500+</div>
+                        <div class="calc-result-note">Unit confusion alone creates ~60% error</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── Policy Options ─── -->
+    <section id="policy" class="alt">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2>Options for Government</h2>
+                <p>We don't argue against pay-per-mile in principle &mdash; only against using unsuitable data.</p>
+            </div>
+
+            <div class="policy-options fade-up">
+                <div class="policy-card">
+                    <h3>A: Proceed with caution</h3>
+                    <p>Use MOT data despite quality issues. Accept a high dispute rate.</p>
+                    <ul>
+                        <li>~130,000 potential appeals annually</li>
+                        <li>Judicial review risk</li>
+                        <li>Public backlash likely</li>
+                    </ul>
+                </div>
+                <div class="policy-card recommended">
+                    <h3>B: Improve data first</h3>
+                    <p>Mandatory photographic capture, real-time verification, fraud detection investment.</p>
+                    <ul>
+                        <li>3&ndash;5 year timeline</li>
+                        <li>Data quality already trending right</li>
+                        <li>Builds public confidence</li>
+                    </ul>
+                </div>
+                <div class="policy-card">
+                    <h3>C: Alternative approaches</h3>
+                    <p>Consider systems that don't rely on MOT odometer readings at all.</p>
+                    <ul>
+                        <li>Increase Vehicle Excise Duty</li>
+                        <li>GPS-based tracking</li>
+                        <li>Insurance telematics partnerships</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── Sensitivity Analysis ─── -->
+    <section id="sensitivity">
+        <div class="container">
+            <div class="sensitivity-content fade-up">
+                <div class="sensitivity-text">
+                    <h3>Results are robust across all parameter choices</h3>
+                    <p>We tested 81 parameter combinations varying decline thresholds, stuck-odometer windows, and implausibility limits.</p>
+                    <p>The "any issue" rate ranged from <strong>4.43% to 5.19%</strong> across all combinations, confirming the 4.7% finding is not sensitive to methodology choices.</p>
+
+                    <table class="param-table">
+                        <thead>
+                            <tr>
+                                <th>Parameter</th>
+                                <th>Tested Range</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Decline threshold</td>
+                                <td>-100 to -1,000 miles</td>
+                            </tr>
+                            <tr>
+                                <td>Stuck threshold</td>
+                                <td>6 to 18 months</td>
+                            </tr>
+                            <tr>
+                                <td>Max annual mileage</td>
+                                <td>50k to 150k miles/year</td>
+                            </tr>
+                            <tr>
+                                <td>Max total mileage</td>
+                                <td>300k to 750k miles</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="figure-panel">
+                    <img src="figures/sensitivity_analysis.png" alt="Four-panel sensitivity analysis showing results are stable across parameter variations" loading="lazy">
+                    <p class="figure-caption">Sensitivity analysis across 81 parameter combinations (3&times;3&times;3&times;3 grid)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── Counterarguments ─── -->
+    <section id="counterarguments">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2>Addressing the Objections</h2>
+                <p>We anticipated the most likely criticisms and addressed them in the research.</p>
+            </div>
+
+            <div class="accordion fade-up">
+                <div class="accordion-item">
+                    <button class="accordion-trigger" aria-expanded="false">
+                        <span>&ldquo;You&rsquo;re overstating the problem&rdquo;</span>
+                        <svg class="accordion-icon" width="20" height="20" viewBox="0 0 20 20"><polyline points="6 8 10 12 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Our thresholds are deliberately <strong>conservative</strong>: 500-mile decline tolerance (not 100), 12-month stuck window (not 6), 100,000 miles/year maximum (not 50,000). The government's own data (Cap HPI 6.3%, DVSA ~4%) shows <strong>similar or higher</strong> rates. If anything, we understate the problem. Sensitivity analysis across 81 parameter combinations confirms the rate at 4.43%&ndash;5.19%.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-trigger" aria-expanded="false">
+                        <span>&ldquo;Some discrepancies have legitimate explanations&rdquo;</span>
+                        <svg class="accordion-icon" width="20" height="20" viewBox="0 0 20 20"><polyline points="6 8 10 12 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </button>
+                    <div class="accordion-content">
+                        <p>We explicitly acknowledge this. Odometer replacement and imported vehicles are legitimate. But legitimate or not, <strong>these vehicles cannot be fairly taxed using MOT data</strong>. The distinction between &ldquo;error&rdquo; and &ldquo;legitimate anomaly&rdquo; is irrelevant for taxation purposes &mdash; the dispute burden is the same.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-trigger" aria-expanded="false">
+                        <span>&ldquo;This is just a sample, not representative&rdquo;</span>
+                        <svg class="accordion-icon" width="20" height="20" viewBox="0 0 20 20"><polyline points="6 8 10 12 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </button>
+                    <div class="accordion-content">
+                        <p>This is <strong>not a sample</strong>. We analysed the complete DVSA database: every MOT test ever recorded for every passenger car in the UK. 760 million tests, 112 million vehicles. This is census data, not a sample. The 95% confidence interval is 4.66%&ndash;4.67%.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-trigger" aria-expanded="false">
+                        <span>&ldquo;Other countries use odometer data for taxation&rdquo;</span>
+                        <svg class="accordion-icon" width="20" height="20" viewBox="0 0 20 20"><polyline points="6 8 10 12 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </button>
+                    <div class="accordion-content">
+                        <p><strong>No comparable country uses MOT-equivalent readings for taxation.</strong> The Netherlands considered it then abandoned the idea. New Zealand uses tamper-evident hubodometers. Oregon uses GPS or verified photographs. Every jurisdiction that has attempted mileage-based taxation uses purpose-built measurement systems.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-trigger" aria-expanded="false">
+                        <span>&ldquo;A 5% error rate is acceptable for taxation&rdquo;</span>
+                        <svg class="accordion-icon" width="20" height="20" viewBox="0 0 20 20"><polyline points="6 8 10 12 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </button>
+                    <div class="accordion-content">
+                        <p>HMRC self-assessment has ~3% errors, but taxpayers can verify and dispute with records. MOT odometer taxation offers <strong>no independent verification mechanism</strong>. The 5% is only <em>detectable</em> issues &mdash; the remaining 95% aren't "verified correct," they're "not detectably wrong." And the errors are large: unit confusion alone creates a ~60% discrepancy, worth &pound;600&ndash;1,500+ per vehicle.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-trigger" aria-expanded="false">
+                        <span>&ldquo;The system could be improved&rdquo;</span>
+                        <svg class="accordion-icon" width="20" height="20" viewBox="0 0 20 20"><polyline points="6 8 10 12 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </button>
+                    <div class="accordion-content">
+                        <p>We agree, and we don't argue that pay-per-mile is impossible. We argue that <strong>current MOT data is unsuitable</strong>. Improvements (mandatory photo capture, real-time verification, tamper detection, OBD port reading) each require significant investment, regulatory changes, and equipment upgrades. Our recommendation is Option B: improve the data quality first, then proceed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── Methodology ─── -->
+    <section id="methodology" class="alt">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2>Methodology</h2>
+                <p>Transparent, reproducible, and deliberately conservative.</p>
+            </div>
+
+            <div class="method-grid fade-up">
+                <div class="method-card">
+                    <div class="method-num">1</div>
+                    <h3>Complete Census Data</h3>
+                    <p>Full DVSA bulk download via official API. No sampling &mdash; this is every MOT test ever recorded for 112 million passenger cars.</p>
+                </div>
+                <div class="method-card">
+                    <div class="method-num">2</div>
+                    <h3>Vehicle Classification</h3>
+                    <p>Three-tier make/model filtering to exclude motorcycles, vans, and commercial vehicles. &gt;99% classification accuracy.</p>
+                </div>
+                <div class="method-card">
+                    <div class="method-num">3</div>
+                    <h3>Sequential Analysis</h3>
+                    <p>Chronologically ordered readings compared for each vehicle. Same-day retests filtered to avoid false positives.</p>
+                </div>
+                <div class="method-card">
+                    <div class="method-num">4</div>
+                    <h3>Conservative Thresholds</h3>
+                    <p>All detection thresholds set conservatively: 500-mile decline tolerance, 12-month stuck window, 100k miles/year maximum.</p>
+                </div>
+                <div class="method-card">
+                    <div class="method-num">5</div>
+                    <h3>Statistical Rigour</h3>
+                    <p>Wilson score confidence intervals. Full population analysis. Results validated against DVSA's own 4% warning rate.</p>
+                </div>
+                <div class="method-card">
+                    <div class="method-num">6</div>
+                    <h3>Sensitivity Testing</h3>
+                    <p>81-parameter grid confirms findings are robust. Issue rate ranges from 4.43% to 5.19% across all combinations.</p>
+                </div>
+            </div>
+
+            <div class="validation-banner fade-up">
+                <p>Our <strong>4.67%</strong> finding aligns closely with DVSA's <strong>~4%</strong> warning rate, independently validating both the methodology and the government's own statistics.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── The Paper ─── -->
+    <section id="paper">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2>The Academic Paper</h2>
+                <p>Full peer-reviewed analysis with complete methodology, results, and discussion.</p>
+            </div>
+
+            <div class="paper-card fade-up">
+                <div class="paper-meta">
+                    <div class="paper-type">Research Paper</div>
+                    <h3>Unfit for Purpose: MOT Odometer Data and the Pay-Per-Mile Problem</h3>
+                    <p class="paper-authors">Anonymous &middot; December 2025 &middot; 15 pages</p>
+                    <p class="paper-abstract"><strong>Abstract:</strong> Analysis of 760 million MOT test records covering 112 million UK passenger vehicles reveals that 4.67% (95% CI: 4.66%&ndash;4.67%) have detectable odometer data quality issues. Extrapolated to the UK's 27.5 million car fleet, approximately 1.3 million motorists would face potential taxation disputes under a pay-per-mile scheme relying on MOT data. Results are consistent with DVSA's own ~4% warning rate and robust across 81 sensitivity parameter combinations (range: 4.43%&ndash;5.19%).</p>
+                    <div class="paper-actions">
+                        <a href="mot_odometer_analysis.pdf" class="btn btn-amber" target="_blank">Download PDF</a>
+                        <a href="https://github.com/citi94/odometer-analysis" class="btn btn-dark">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="paper-cite">
+                    <div class="cite-label">Cite this work</div>
+                    <code class="cite-text" id="citeText">Anonymous (2025). "Unfit for Purpose: MOT Odometer Data and the Pay-Per-Mile Problem." Independent research. Available at: https://citi94.github.io/odometer-analysis/</code>
+                    <button class="cite-copy" onclick="navigator.clipboard.writeText(document.getElementById('citeText').textContent).then(()=>{this.textContent='Copied!';setTimeout(()=>{this.textContent='Copy'},2000)})">Copy</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── CTA ─── -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Independent. Transparent. Reproducible.</h2>
+            <p>All code, data processing scripts, and methodology are open source and available for independent verification and scrutiny.</p>
+            <div class="cta-buttons">
+                <a href="mot_odometer_analysis.pdf" class="btn btn-amber" target="_blank">Read the Paper</a>
+                <a href="https://github.com/citi94/odometer-analysis" class="btn btn-outline">Source Code</a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <p>Data source: DVSA MOT History API bulk download (December 2025)</p>
+        <p>Independent analysis &middot; No commercial interest &middot; Code available for scrutiny</p>
+        <p style="margin-top: 8px;"><a href="https://github.com/citi94">github.com/citi94</a></p>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
